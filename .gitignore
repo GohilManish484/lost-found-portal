@@ -1,0 +1,14 @@
+# 🛡️ Ignore sensitive files & folders
+/config/db.php
+.env
+
+# 💻 Ignore system files
+.DS_Store
+Thumbs.db
+
+# ⚙️ Ignore dependency folders
+/vendor/
+node_modules/
+
+# 😴 Ignore logs
+*.log
