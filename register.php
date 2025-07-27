@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Register</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/lost_found_portal/assets/css/style.css">
+
 </head>
 <body>
-    <h2>Register</h2>
-    <form action="users/Register_action.php" method="POST">
-        <label>Full Name:</label><br>
-        <input type="text" name="name" required><br><br>
 
-        <label>Email:</label>
-        <input type="email" name="email" required><br><br>
-        
-        <label>Password:</label>
-        <input type="password" name="password" required><br><br>
+    <div class="container">
+            <h2>User Registration</h2>
+       <form action="users/register_action.php" method="POST">
+           <input type="text" name="name" placeholder="Full Name" required>
+           <input type="email" name="email" placeholder="Email Address" required>
+           <input type="password" name="password" placeholder="Password" required>
+           <button type="submit">Register</button>
+       </form>
+    </div>
 
-        <input type="submit" value="Register">
-
-    </form>
     <p>Already have an account? <a href="login.php">Login here</a></p>
     <a href="index.php">Back to Home</a>
 </body>
